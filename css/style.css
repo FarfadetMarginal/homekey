@@ -9,7 +9,7 @@
 *{
     margin:0;
     scroll-behavior: smooth;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
     font-family: "Open Sans";
 }
 
@@ -47,9 +47,34 @@ header img{
     width: 180px;
 }
 
+
+
+header ul a {
+  position: relative;
+}
+
+header ul a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background:rgba(0, 0, 0, 0);
+}
+
+header ul a:hover::after {
+  animation: sweepUp 0.45s forwards;
+  background:var(--red);
+}
+
+@keyframes sweepUp {
+  0%   { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-160px); opacity: 0.5; }
+}
+
 header ul a:hover{
     color: var(--red);
-/* mettre l'animation de la barre qui monte */
 }
 
 
@@ -210,6 +235,13 @@ footer a:hover{
     border-radius: 12px;
 }
 
+#s2gd1{
+    flex: 3;
+}
+#s2gd2{
+    flex: 1;
+}
+
 .s2ar2{
     display: flex;
 }
@@ -220,7 +252,10 @@ footer a:hover{
     border-radius: 12px;
     padding: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    width: 270px;
+}
+
+.s2d1 a{
+    flex: 1 0 27%;
 }
 
 .s2d1{
@@ -234,6 +269,10 @@ footer a:hover{
     font-size: 18px;
     font-weight: 700;
     margin-top: 30px;
+}
+
+.s2ga:hover{
+    color: var(--red);
 }
 
 .s2di1, .s2di2, .s2di3, .s2di4, .s2di5, .s2di6{
@@ -355,11 +394,11 @@ footer a:hover{
     padding-top: 20px;
 }
 
-@media screen and (max-width :1300px) {
+/* @media screen and (max-width :1300px) {
 .s2ar1{
     width: 162px;
 }
-}
+} */
 
 /* section 3 */
 #s3{
@@ -396,7 +435,7 @@ footer a:hover{
     padding-top: 40px;
 }
 
-#s3 img:hover{
+.s3ar1:hover img{
     transform: scale(1.02);
     filter: grayscale(100%);
 }
@@ -405,41 +444,78 @@ footer a:hover{
     transform: scale(1.02);
     filter: grayscale(100%);
 }
-
-.s2di1:hover{
-    transform: scale(1.02);
-    filter: grayscale(100%);
-}
-.s2di2:hover{
-    transform: scale(1.02);
-    filter: grayscale(100%);
-}
-.s2di3:hover{
-    transform: scale(1.02);
-    filter: grayscale(100%);
-}
-.s2di4:hover{
-    transform: scale(1.02);
-    filter: grayscale(100%);
-}
-.s2di5:hover{
-    transform: scale(1.02);
-    filter: grayscale(100%);
-}
-.s2di6:hover{
-    transform: scale(1.02);
-    filter: grayscale(100%);
-}
-.s2di7:hover{
-    transform: scale(1.02);
-    filter: grayscale(100%);
-}
-.s2di8:hover{
-    transform: scale(1.02);
-    filter: grayscale(100%);
-}
-.s2di9:hover{
+.s2d1 a:hover .s2di1, .s2d1 a:hover .s2di2, .s2d1 a:hover .s2di3, .s2d1 a:hover .s2di4, .s2d1 a:hover .s2di5, .s2d1 a:hover .s2di6{
     transform: scale(1.02);
     filter: grayscale(100%);
 }
 
+#s2gd2 a:hover .s2di7, #s2gd2 a:hover .s2di8, #s2gd2 a:hover .s2di9{
+    transform: scale(1.02);
+    filter: grayscale(100%);    
+}
+
+/* resp */
+
+
+
+@media screen and (max-width :1024px) {
+    
+    #s3 div{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #s3 div a{
+        flex: 0 0 40%;
+    }
+
+    #s2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #s2gd1{
+        flex: 0 0 87%;
+    }
+    #s2gd2{
+        flex: 0 0 87%;
+    }
+
+    #s3 h2{
+        padding-left: 20px;
+    }
+    
+}
+
+@media screen and (max-width :767px) {
+   #s3 div a{
+        flex: 0 0 87%;
+    }
+
+    header{
+        flex-wrap: wrap;
+    }
+
+    #categories{
+        flex-wrap: wrap;
+    }
+
+    .s2d1{
+        flex-wrap: wrap;
+    }
+
+    #f1d2{
+        flex-wrap: wrap
+    }
+
+    .f1d1{
+        padding-right: 40px;
+    }
+
+    #s2gd1, #s2gd2{
+        padding: 10px;
+    }
+
+    .s2d1 a {
+    flex: 1 0 87%;
+}
+}
