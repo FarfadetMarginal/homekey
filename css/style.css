@@ -92,6 +92,7 @@ footer a:hover{
 #s1{
     max-width: 1440px;
     margin: auto;
+    padding: 20px;
 }
 
 #divsearch{
@@ -182,7 +183,140 @@ footer a:hover{
 
 #s1d1{
     display: flex;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
     align-items: center;
+}
+
+#s1d1 i{
+    color: var(--red);
+}
+
+/* section 2 */
+#s2{
+    margin: auto;
+    max-width: 1440px;
+    display: flex;
+    gap: 40px;
+}
+
+#s2 h2{
+  padding-bottom: 40px;
+}
+
+#s2gd1{
+    background-color:var(--lightgrey);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.s2ar1{
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 270px;
+}
+
+.s2d1{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.s2ga{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.s2di1, .s2di2, .s2di3, .s2di4, .s2di5, .s2di6{
+    height: 160px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.s2di1{
+    background-image: url(../img/Retiro-Park.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.s2di2{
+    background-image:url(../img/Royal-Palace-of-Madrid.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.s2di3{
+    background-image: url(../img/Puerta-del-Sol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.s2di4{
+    background-image:url(../img/Plaza-Mayor.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.s2di5{
+    background-image:url(../img/Prado-Museum.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.s2di6{
+    background-image:url(../img/Gran-Vía.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+
+.s2di1 span, .s2di2 span, .s2di5 span{
+    float: inline-end;
+    background-color: var(--red);
+    color: var(--white);
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 4px;
+}
+
+.s2ar1 p{
+    padding-bottom: 15px;
+    padding-top: 6px;
+}
+
+.s2ar1 i{
+    color: var(--red);
+    padding-right: 4px;
+}
+
+.s2ar1 span i{
+    color: var(--grey);
+}
+
+.s2dstar{
+    gap: 8px;
+}
+
+.s2di8{
+    background-image:url(../img/Gran-Vía.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.s2di7{
+    background-image: url(../img/Retiro-Park.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.s2di9{
+    background-image:url(../img/Puerta-del-Sol.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
 }
