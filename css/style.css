@@ -204,17 +204,22 @@ footer a:hover{
   padding-bottom: 40px;
 }
 
-#s2gd1{
+#s2gd1, #s2gd2{
     background-color:var(--lightgrey);
-    padding: 40px;
+    padding: 35px;
     border-radius: 12px;
 }
+
+.s2ar2{
+    display: flex;
+}
+
 
 .s2ar1{
     background-color: var(--white);
     border-radius: 12px;
     padding: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     width: 270px;
 }
 
@@ -274,7 +279,7 @@ footer a:hover{
     width: auto;
 }
 
-.s2di1 span, .s2di2 span, .s2di5 span{
+.s2di1 span, .s2di2 span, .s2di5 span, .s2di7 span, .s2di8 span, .s2di9 span{
     float: inline-end;
     background-color: var(--red);
     color: var(--white);
@@ -289,12 +294,12 @@ footer a:hover{
     padding-top: 6px;
 }
 
-.s2ar1 i{
+.s2dstar i{
     color: var(--red);
     padding-right: 4px;
 }
 
-.s2ar1 span i{
+.s2dstar span i{
     color: var(--grey);
 }
 
@@ -307,16 +312,134 @@ footer a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
+    background-position: center;
 }
 .s2di7{
     background-image: url(../img/Retiro-Park.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
+    background-position: center;
 }
 .s2di9{
     background-image:url(../img/Puerta-del-Sol.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
+    background-position: center;
 }
+
+.s2ar2{
+    background-color: var(--white);
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    height: 168px;
+    padding: 10px;
+}
+
+.s2di7, .s2di8, .s2di9{
+    width: 94px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.s2d3{
+    padding: 10px;
+    align-self: center;
+    padding-left: 30px;
+}
+
+.s2d3 p{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width :1300px) {
+.s2ar1{
+    width: 162px;
+}
+}
+
+/* section 3 */
+#s3{
+    margin: auto;
+    max-width: 1440px;
+}
+
+#s3 img{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#s3 div{
+    display: flex;
+    margin-bottom: 80px;
+    gap: 40px;
+}
+
+.s3ar1{
+    height: 431px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.2);
+}
+
+.s3ar1 h3{
+    text-align: center;
+}
+
+#s3  h2{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+#s3 img:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
+}
+
+#s2 img:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
+}
+
+.s2di1:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
+}
+.s2di2:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
+}
+.s2di3:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
+}
+.s2di4:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
+}
+.s2di5:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
+}
+.s2di6:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
+}
+.s2di7:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
+}
+.s2di8:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
+}
+.s2di9:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
+}
+
