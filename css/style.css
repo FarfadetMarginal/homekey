@@ -47,6 +47,13 @@ header img{
     width: 180px;
 }
 
+ #divsearch button i{
+        display: none;
+    }
+#divsearch button span{
+        display: block;
+    }
+
 
 
 header ul a {
@@ -262,6 +269,7 @@ footer a:hover{
     display: flex;
     gap: 20px;
     padding-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .s2ga{
@@ -516,6 +524,14 @@ footer a:hover{
     }
 
     .s2d1 a {
-    flex: 1 0 87%;
-}
+        flex: 1 0 87%;
+    }
+
+    #divsearch button i{
+        display: block;
+    }
+
+    #divsearch button span{
+        display: none;
+    }
 }
